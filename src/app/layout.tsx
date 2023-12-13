@@ -1,10 +1,10 @@
+import SessionProvider from '@/components/session-provider';
+import { ThemeProvider } from '@/components/theme-provider';
+import { Toaster } from '@/components/ui/toaster';
+import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Figtree } from 'next/font/google';
 import './globals.css';
-import { cn } from '@/lib/utils';
-import { ThemeProvider } from '@/components/theme-provider';
-import SessionProvider from '@/components/session-provider';
-import { Toaster } from '@/components/ui/toaster';
 
 const figtree = Figtree({ subsets: ['latin'] });
 
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang='en'>
-            <body className={cn(figtree.className, 'font-sans antialiased')}>
+            <body className={cn('max-w-screen-2xl font-sans text-[0.900rem]/[1.35rem] antialiased', figtree.className)}>
                 <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
                     <SessionProvider>{children}</SessionProvider>
                 </ThemeProvider>

@@ -1,5 +1,11 @@
+import SideNavigation from '@/components/side-navigation';
 import { Children } from '@/types';
 
 export default function Layout({ children }: Children) {
-    return <main className='mx-auto min-h-[80vh] max-w-screen-2xl'>{children}</main>;
+    return (
+        <div className='flex'>
+            <SideNavigation />
+            <main className='min-h-screen w-4/5 max-w-[80%] px-8 py-32 lg:py-24'>{children}</main>
+        </div>
+    );
 }
