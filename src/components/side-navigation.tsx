@@ -1,23 +1,15 @@
 import { menus } from '@/lib/data/menus';
-import { SideNavigationLink } from './side-navigation-link';
+import ApplicationLogo from './application-logo';
 import { Icon } from './icon';
-import Image from 'next/image';
+import { SideNavigationLink } from './side-navigation-link';
 import { ThemeToggle } from './theme-toggle';
-import ApplicationLogo from './brands';
 
 export default function SideNavigation() {
     return (
-        <nav className='w-1/5 max-w-[20%] border-r'>
-            <div className='fixed flex h-screen w-1/5 flex-col'>
+        <nav className='hidden w-80 shrink-0 border-r lg:flex'>
+            <div className='fixed flex h-screen w-80 shrink-0 flex-col'>
                 <div className='p-6'>
                     <div className='flex w-full items-center justify-end'>
-                        {/* <Image
-                            src={'/svg/labkraf-logo.svg'}
-                            alt='Labkraf Logo'
-                            width={1840}
-                            height={574}
-                            className='h-14 w-auto text-foreground'
-                        /> */}
                         <ApplicationLogo />
                     </div>
                 </div>

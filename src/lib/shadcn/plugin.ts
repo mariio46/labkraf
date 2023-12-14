@@ -106,7 +106,7 @@ export const shadcnPlugin = plugin(
                     sm: 'calc(var(--radius) - 4px)',
                 },
                 fontFamily: {
-                    sans: ['Figtree', ...fontFamily.sans],
+                    sans: ['GeistSans, Figtree', ...fontFamily.sans],
                 },
                 keyframes: {
                     'accordion-down': {
