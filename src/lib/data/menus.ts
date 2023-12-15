@@ -7,22 +7,22 @@ interface MenuType extends TablerIconProps {
 
 export const menus = [
     {
-        name: 'explore',
+        name: 'home',
         url: '/',
         icon: 'IconCompass',
     },
     {
-        name: 'tentang kami',
+        name: 'about',
         url: '/about',
         icon: 'IconInfoCircle',
     },
     {
-        name: 'layanan',
+        name: 'services',
         url: '/offers',
         icon: 'IconStars',
     },
     {
-        name: 'kontak',
+        name: 'contact',
         url: '/starterkits',
         icon: 'IconHeartHandshake',
     },

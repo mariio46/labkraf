@@ -9,8 +9,8 @@ import Image from 'next/image';
 export default function HomeServicesCollection() {
     return (
         <Container className='mt-16 w-full max-w-none lg:mt-20'>
-            <SecondaryHeading className='text-brand inline-flex items-center gap-2'>
-                <Icon name='IconStars' className='text-brand h-7 w-7 stroke-2' />
+            <SecondaryHeading className='inline-flex items-center gap-2 text-brand'>
+                <Icon name='IconStars' className='h-7 w-7 stroke-2 text-brand' />
                 Layanan Kami
             </SecondaryHeading>
             <div className='mt-5 grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1'>

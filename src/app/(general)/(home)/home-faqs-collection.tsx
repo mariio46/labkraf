@@ -7,8 +7,8 @@ import { HomeFaqs } from '@/lib/data/faqs';
 export default function HomeFaqsCollection() {
     return (
         <Container className='mt-16 w-full max-w-none lg:mt-20'>
-            <SecondaryHeading className='text-brand inline-flex items-center gap-2'>
-                <Icon name='IconHelp' className='text-brand h-7 w-7 stroke-2' />
+            <SecondaryHeading className='inline-flex items-center gap-2 text-brand'>
+                <Icon name='IconHelp' className='h-7 w-7 stroke-2 text-brand' />
                 FAQ
             </SecondaryHeading>
             <div className='mt-5 max-w-4xl p-4'>

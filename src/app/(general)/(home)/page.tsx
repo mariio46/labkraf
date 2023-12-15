@@ -11,10 +11,10 @@ import HomeServicesCollection from './home-services-collection';
 
 export default function Home() {
     return (
-        <div>
+        <>
             <Header>
                 <SecondaryHeading>Halo, Kami Labkraf.id</SecondaryHeading>
-                <PrimaryHeading className='text-brand my-5 max-w-4xl text-4xl'>
+                <PrimaryHeading className='my-5 max-w-4xl text-4xl text-brand'>
                     Berkolaborasi dengan mitra untuk capai tujuan bersama.
                 </PrimaryHeading>
                 <PrimaryParagraph className='max-w-2xl lg:text-base'>
@@ -38,6 +38,6 @@ export default function Home() {
             <HomeServicesCollection />
             <HomeProjectsCollection />
             <HomeFaqsCollection />
-        </div>
+        </>
     );
 }

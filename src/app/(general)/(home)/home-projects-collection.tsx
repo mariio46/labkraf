@@ -10,8 +10,8 @@ import Image from 'next/image';
 export default function HomeProjectsCollection() {
     return (
         <Container className='mt-16 w-full max-w-none lg:mt-20'>
-            <SecondaryHeading className='text-brand inline-flex items-center gap-2'>
-                <Icon name='IconDeviceLaptop' className='text-brand h-7 w-7 stroke-2' />
+            <SecondaryHeading className='inline-flex items-center gap-2 text-brand'>
+                <Icon name='IconDeviceLaptop' className='h-7 w-7 stroke-2 text-brand' />
                 Project Terbaru
             </SecondaryHeading>
             <div className='mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-1'>
