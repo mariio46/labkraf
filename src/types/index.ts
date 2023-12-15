@@ -15,11 +15,3 @@ export type Children = {
 export interface TablerIconProps {
     icon?: keyof typeof icons;
 }
-
-export type AuthenticatedUserType = {
-    id?: string;
-    name?: string;
-    email: string;
-    image?: string;
-    randomKey?: string;
-};

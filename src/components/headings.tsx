@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 
 export const PrimaryHeading = ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => {
-    return <h1 className={cn('text-3xl font-bold text-foreground hover:text-primary', className)} {...props} />;
+    return <h1 className={cn('text-3xl font-bold text-foreground', className)} {...props} />;
 };
 
 export const SecondaryHeading = ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => {
