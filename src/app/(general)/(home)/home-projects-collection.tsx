@@ -9,9 +9,9 @@ import Image from 'next/image';
 
 export default function HomeProjectsCollection() {
     return (
-        <Container className='mt-16 w-full max-w-none lg:mt-32'>
-            <SecondaryHeading className='inline-flex items-center gap-2 bg-gradient-to-r from-primary/90 via-primary/80 to-primary/70 bg-clip-text text-transparent'>
-                <Icon name='IconDeviceLaptop' className='h-7 w-7 stroke-[1.5] text-primary' />
+        <Container className='mt-16 w-full max-w-none lg:mt-20'>
+            <SecondaryHeading className='text-brand inline-flex items-center gap-2'>
+                <Icon name='IconDeviceLaptop' className='text-brand h-7 w-7 stroke-2' />
                 Project Terbaru
             </SecondaryHeading>
             <div className='mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-1'>

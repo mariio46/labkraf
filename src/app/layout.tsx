@@ -6,8 +6,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-    title: process.env.APP_NAME,
-    description: 'Starterkir for NextJS 14 with authentication.',
+    title: 'Labkraf',
+    description: 'Smart and Creative Solution.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

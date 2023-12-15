@@ -6,9 +6,9 @@ import { HomeFaqs } from '@/lib/data/faqs';
 
 export default function HomeFaqsCollection() {
     return (
-        <Container className='mt-16 w-full max-w-none lg:mt-32'>
-            <SecondaryHeading className='inline-flex items-center gap-2 bg-gradient-to-r from-primary/90 via-primary/80 to-primary/70 bg-clip-text text-transparent'>
-                <Icon name='IconHelp' className='h-7 w-7 stroke-[1.5] text-primary' />
+        <Container className='mt-16 w-full max-w-none lg:mt-20'>
+            <SecondaryHeading className='text-brand inline-flex items-center gap-2'>
+                <Icon name='IconHelp' className='text-brand h-7 w-7 stroke-2' />
                 FAQ
             </SecondaryHeading>
             <div className='mt-5 max-w-4xl p-4'>

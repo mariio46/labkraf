@@ -14,7 +14,7 @@ export default function Home() {
         <div>
             <Header>
                 <SecondaryHeading>Halo, Kami Labkraf.id</SecondaryHeading>
-                <PrimaryHeading className='my-5 max-w-4xl bg-gradient-to-r from-primary/90 via-primary/70 to-primary/50 bg-clip-text text-4xl text-transparent'>
+                <PrimaryHeading className='text-brand my-5 max-w-4xl text-4xl'>
                     Berkolaborasi dengan mitra untuk capai tujuan bersama.
                 </PrimaryHeading>
                 <PrimaryParagraph className='max-w-2xl lg:text-base'>
