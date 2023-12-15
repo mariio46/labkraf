@@ -1,4 +1,3 @@
-import SessionProvider from '@/components/session-provider';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
@@ -16,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang='en'>
             <body className={cn('max-w-screen-2xl text-[0.900rem]/[1.35rem] antialiased', GeistSans.className)}>
                 <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-                    <SessionProvider>{children}</SessionProvider>
+                    {children}
                 </ThemeProvider>
                 <Toaster />
             </body>

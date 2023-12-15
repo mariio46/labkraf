@@ -13,7 +13,7 @@ export default function SideNavigation() {
                         <ApplicationLogo />
                     </div>
                 </div>
-                <div className='flex h-full flex-1 flex-col justify-center space-y-3 overflow-y-auto'>
+                <div className='mb-8 flex h-full flex-1 flex-col justify-center space-y-3 overflow-y-auto'>
                     {menus.map((menu, i) => (
                         <SideNavigationLink key={i} href={menu.url} className='w-fit'>
                             {menu.name}
