@@ -18,7 +18,7 @@ export default function HomeProjectsCollection() {
                 {HomeProjects.map((project, i) => (
                     <div
                         key={i}
-                        className='group flex w-full flex-col items-start justify-start gap-4 rounded-md p-4 transition-colors duration-300 hover:bg-accent xl:max-w-4xl xl:flex-row'>
+                        className='group flex w-full flex-col items-start justify-start gap-4 rounded-md p-4 transition-colors duration-300 hover:bg-accent/50 xl:max-w-4xl xl:flex-row'>
                         <Image
                             src={project.image}
                             loading='lazy'

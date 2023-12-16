@@ -18,12 +18,12 @@ export const menus = [
     },
     {
         name: 'services',
-        url: '/offers',
+        url: '/services',
         icon: 'IconStars',
     },
     {
         name: 'contact',
-        url: '/starterkits',
+        url: '/contact',
         icon: 'IconHeartHandshake',
     },
 ] satisfies MenuType[];

@@ -17,7 +17,7 @@ export default function HomeServicesCollection() {
                 {HomeServices.map((service, i) => (
                     <div
                         key={i}
-                        className='flex w-full flex-col items-center justify-start gap-4 rounded-md p-4 transition-colors duration-300 hover:bg-accent md:max-w-4xl md:flex-row'>
+                        className='flex w-full flex-col items-center justify-start gap-4 rounded-md p-4 transition-colors duration-300 hover:bg-accent/50 md:max-w-4xl md:flex-row'>
                         <Image
                             src={service.image}
                             loading='lazy'

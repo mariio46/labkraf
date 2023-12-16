@@ -2,7 +2,7 @@ import { menus } from '@/lib/data/menus';
 import { ApplicationLogo } from './application-logo';
 import { Icon } from './icon';
 import { SideNavigationLink } from './side-navigation-link';
-import { ThemeToggle } from './theme-toggle';
+import { ToggleTheme } from './theme-toggle';
 
 export default function SideNavigation() {
     return (
@@ -22,8 +22,8 @@ export default function SideNavigation() {
                     ))}
                 </div>
                 <div className='px-6 py-3'>
-                    <div className='flex w-full items-center justify-end'>
-                        <ThemeToggle className='h-[2.5rem] w-[2.5rem]' />
+                    <div className='flex items-center justify-end'>
+                        <ToggleTheme />
                     </div>
                 </div>
             </div>

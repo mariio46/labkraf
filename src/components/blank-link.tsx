@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
-import { TablerIconProps } from '@/types';
+import { NavLinkType, TablerIconProps } from '@/types';
+import Link from 'next/link';
 import { Icon } from './icon';
 
 interface BlankLinkType extends React.AnchorHTMLAttributes<HTMLAnchorElement>, TablerIconProps {}
@@ -12,3 +13,21 @@ export function BlankLink({ children, className, icon, ...props }: BlankLinkType
         </a>
     );
 }
+
+type SocialBlankLinkType = NavLinkType & TablerIconProps;
+
+export const SocialBlankLink = ({ href, className, icon, ...props }: SocialBlankLinkType) => {
+    return (
+        <Link
+            href={href}
+            target='_blank'
+            rel='noopener noreferrer'
+            className={cn('group rounded-full p-1 transition-colors duration-300 hover:bg-brand', className)}
+            {...props}>
+            <Icon
+                name={icon}
+                className='stroke-[1.5] text-muted-foreground transition-colors duration-300 group-hover:text-white dark:group-hover:text-black'
+            />
+        </Link>
+    );
+};

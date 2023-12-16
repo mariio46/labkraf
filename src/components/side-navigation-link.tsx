@@ -4,10 +4,9 @@ import { cn } from '@/lib/utils';
 import { NavLinkType } from '@/types';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { BlankLink } from './blank-link';
 
-type SideNavigationSocialLinkType = React.LiHTMLAttributes<HTMLLIElement> &
-    React.AnchorHTMLAttributes<HTMLAnchorElement>;
+// type SideNavigationSocialLinkType = React.LiHTMLAttributes<HTMLLIElement> &
+//     React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export const SideNavigationLink = ({ href, className, children, ...props }: NavLinkType) => {
     const pathname: string = usePathname();
@@ -30,18 +29,18 @@ export const SideNavigationLink = ({ href, className, children, ...props }: NavL
     );
 };
 
-export const SideNavigationSocialLink = ({ href, className, children, ...props }: SideNavigationSocialLinkType) => {
-    return (
-        <li className='-mx-4'>
-            <BlankLink
-                href={href}
-                className={cn(
-                    'flex items-center gap-x-2 rounded-md px-4 py-2 text-sm capitalize tracking-tight text-muted-foreground hover:bg-accent hover:text-foreground [&>svg]:mr-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:stroke-[1.3]',
-                    className,
-                )}
-                {...props}>
-                {children}
-            </BlankLink>
-        </li>
-    );
-};
+// export const SideNavigationSocialLink = ({ href, className, children, ...props }: SideNavigationSocialLinkType) => {
+//     return (
+//         <li className='-mx-4'>
+//             <BlankLink
+//                 href={href}
+//                 className={cn(
+//                     'flex items-center gap-x-2 rounded-md px-4 py-2 text-sm capitalize tracking-tight text-muted-foreground hover:bg-accent hover:text-foreground [&>svg]:mr-2 [&>svg]:h-5 [&>svg]:w-5 [&>svg]:stroke-[1.3]',
+//                     className,
+//                 )}
+//                 {...props}>
+//                 {children}
+//             </BlankLink>
+//         </li>
+//     );
+// };

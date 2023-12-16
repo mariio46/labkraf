@@ -5,7 +5,7 @@ import type { LinkProps } from 'next/link';
 export interface NavLinkType extends LinkProps {
     href: Route | URL;
     className?: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 export type Children = {
@@ -13,5 +13,5 @@ export type Children = {
 };
 
 export interface TablerIconProps {
-    icon?: keyof typeof icons;
+    icon: keyof typeof icons;
 }

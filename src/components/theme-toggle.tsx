@@ -12,6 +12,8 @@ import { TablerIconProps } from '@/types';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import { Icon } from './icon';
+import useLoading from '@/hooks/useLoading';
+import { Skeleton } from './ui/skeleton';
 
 interface ThemeToggleProps {
     className?: string;
@@ -84,3 +86,21 @@ export function ThemeToggle({ className, align = 'start' }: ThemeToggleProps) {
         </DropdownMenu>
     );
 }
+
+export const ToggleTheme = () => {
+    const { theme, setTheme } = useTheme();
+    const { loading, startLoading } = useLoading();
+    const changeTheme = () => (theme === 'light' ? setTheme('dark') : setTheme('light'));
+
+    useEffect(() => {
+        startLoading();
+    }, []);
+
+    if (!loading) return <Skeleton className='h-[2.6rem] w-[2.6rem] rounded-full' />;
+
+    return (
+        <Button variant={'ghost'} size={'icon'} className='h-[2.6rem] w-[2.6rem] rounded-full' onClick={changeTheme}>
+            <Icon name={theme === 'light' ? 'IconSunLow' : 'IconMoon'} />
+        </Button>
+    );
+};
