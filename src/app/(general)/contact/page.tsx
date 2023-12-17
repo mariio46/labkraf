@@ -18,8 +18,8 @@ export default function Contact() {
                     Ayo hubungi kami dan diskusikan apa yang anda inginkan.
                 </PrimaryHeading>
             </Header>
-            <Container className='mt-10 flex w-full max-w-none items-start gap-6'>
-                <section id='contact-form' className='w-1/2 space-y-3'>
+            <Container className='mt-10 flex w-full max-w-none flex-col-reverse items-start gap-6 2xl:flex-row'>
+                <section id='contact-form' className='w-full space-y-3 2xl:w-1/2'>
                     <div>
                         <Label htmlFor='name'>Name</Label>
                         <Input type='text' className='mt-1' id='name' />
@@ -42,7 +42,7 @@ export default function Contact() {
                         </Button>
                     </div>
                 </section>
-                <section id='links' className='w-1/2'>
+                <section id='links' className='w-full 2xl:w-1/2'>
                     <div className='flex flex-wrap items-center gap-3'>
                         <TooltipInfo content='Email'>
                             <Link href='mailto:office@labkraf.id' className='rounded-full bg-accent p-5'>

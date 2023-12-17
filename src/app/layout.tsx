@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang='en'>
-            <body className={cn('max-w-screen-2xl text-[0.900rem]/[1.35rem] antialiased', GeistSans.className)}>
+            <body className={cn('mx-auto max-w-screen-2xl text-[0.900rem]/[1.35rem] antialiased', GeistSans.className)}>
                 <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
                     {children}
                 </ThemeProvider>

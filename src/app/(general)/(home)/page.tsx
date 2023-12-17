@@ -30,7 +30,7 @@ export default function Home() {
                     href='/about'
                     className={cn(
                         buttonVariants({
-                            variant: 'secondary',
+                            variant: 'brand',
                         }),
                         'group items-center gap-x-1 rounded-full',
                     )}>
