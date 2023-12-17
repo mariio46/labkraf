@@ -8,6 +8,7 @@ import Link from 'next/link';
 import HomeFaqsCollection from './home-faqs-collection';
 import HomeProjectsCollection from './home-projects-collection';
 import HomeServicesCollection from './home-services-collection';
+import { cn } from '@/lib/utils';
 
 export default function Home() {
     return (
@@ -27,7 +28,12 @@ export default function Home() {
             <Container className='mt-5 flex flex-wrap items-center gap-2 capitalize'>
                 <Link
                     href='/about'
-                    className={buttonVariants({ variant: 'secondary', className: 'group items-center gap-x-1' })}>
+                    className={cn(
+                        buttonVariants({
+                            variant: 'secondary',
+                        }),
+                        'group items-center gap-x-1 rounded-full',
+                    )}>
                     Read More
                     <Icon
                         name='IconArrowNarrowRight'

@@ -16,7 +16,7 @@ export function SecondaryParagraph({ className, ...props }: React.HTMLAttributes
     return (
         <p
             className={cn(
-                'text-[0.900rem]/[1.35rem] leading-relaxed tracking-wide text-muted-foreground lg:text-base',
+                'text-sm leading-relaxed tracking-wide text-muted-foreground lg:text-[0.900rem]/[1.35rem]',
                 className,
             )}
             {...props}
